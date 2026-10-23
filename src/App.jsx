@@ -7,6 +7,9 @@ import Dashboard from "./components/Dashboard";
 import ProfileDashboard from "./pages/ProfileDashboard";
 import FigmaDashboard from "./pages/FigmaDashboard";
 import AnalyticsDashboard from "./pages/AnalyticsDashboard";
+import ProjectDashboard from "./pages/ProjectDashboard";
+import ProjectDashboardV2 from "./pages/ProjectDashboardV2";
+import FinanceDashboard from "./pages/FinanceDashboard";
 
 function App() {
   return (
@@ -36,6 +39,20 @@ function App() {
                 element={<AnalyticsDashboard />}
               />
 
+              <Route
+                path="/project-dashboard"
+                element={<ProjectDashboard />}
+              />
+
+              <Route
+                path="/project-dashboard-v2"
+                element={<ProjectDashboardV2 />}
+              />
+
+<Route
+  path="/finance-dashboard"
+  element={<FinanceDashboard />}
+/>
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
